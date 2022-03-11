@@ -15,7 +15,7 @@ allHomes = ''
 count = 0
 for auction in auctions:
     count += 1
-    if count == 40:
+    if count == 10:
         break
     title = auction.find("p", class_="auctionTitle").text
     startingBid = auction.findAll("div", class_="value")[0].text
